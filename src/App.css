@@ -1,38 +1,156 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
 .App {
   text-align: center;
 }
+ body {
+     background:#6441A4;
+     width:100%;
+     max-width: 100%;
+     height: 100vh;
+     background-size:contain;
+     background-repeat: no-repeat;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ }
+.link
+{
+   width:100%;
+   height:80px;
+   background-color:#6441A4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.link a
+{
   color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+.createPost
+{
+   width: 90%;
+   display:flex;
+   flex-direction:column;
+   
 }
+.loginPage
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height:80vh;
+}
+.login-container
+{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color:white;
+      padding: 2em;
+      border-radius: 10px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.login-container button
+{
+    border-radius:5px;
+    border: 1px solid grey;
+    margin-top: 10px;
+    padding:5px;
+}
+.post 
+{
+   background-color: white;
+   border-radius: 10px;
+   margin:10px 10px;
+   padding: 10px 50px;
+   font-weight: 100;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.header h1
+{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-bottom:10px;
+   font-weight: 100;
+   text-decoration: underline dotted #0e9dd9;
+}
+.deletePost button
+{
+   border-radius: 6px;
+   padding:3px 8px;
+   margin:5px 0;
+}
+.logout-btn
+{
+  padding:5px;
+  border:none;
+  background-color:white;
+  border-radius:5px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+.author
+{
+   font-size:large;
+   font-weight:100px;
+}
+.createPost
+{
+   width:100vw;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   height:80vh;
+
+}
+.container {
+    background-color: white;
+    padding:2em 5em;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inputGp
+{
+   display:flex;
+   align-items:center;
+   flex-direction: column;
+   margin: 5px;
+}
+.inputGp input
+{
+    border:2px solid black;
+    border-radius: 5px;
+   padding:4px;
+}
+.inputGp textarea
+{
+    height:90px;
+    width:200x;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+.container button
+{
+      padding: 5px;
+      border:1px solid grey;
+      background-color:#0e9dd9;
+      border-radius: 5px;
+      margin-left: 20px;
+      font-size: 15px;
+}
+.author
+{
+   margin-top: 10px;
 }
